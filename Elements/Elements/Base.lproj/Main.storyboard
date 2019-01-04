@@ -173,6 +173,7 @@
                     <connections>
                         <outlet property="elementBoilingPoint" destination="HUS-QD-YqF" id="lCh-EH-PJl"/>
                         <outlet property="elementDiscoveryby" destination="evR-bL-9IN" id="xc6-0o-rCy"/>
+                        <outlet property="elementImage" destination="pvl-zG-bPH" id="BhE-9C-Q4N"/>
                         <outlet property="elementMeltingPoint" destination="sQs-Bo-Hmg" id="imb-j8-qTI"/>
                         <outlet property="elementNumber" destination="XCR-ze-PEB" id="Skc-dv-ezR"/>
                         <outlet property="elementSymbol" destination="4I4-0O-RpP" id="0rZ-Vq-XTZ"/>

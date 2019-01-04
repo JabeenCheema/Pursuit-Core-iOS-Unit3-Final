@@ -11,6 +11,7 @@ import UIKit
 class ElementsDetailedViewController: UIViewController {
 
     
+    @IBOutlet weak var elementImage: UIImageView!
     @IBOutlet weak var elementSymbol: UILabel!
     @IBOutlet weak var elementNumber: UILabel!
     @IBOutlet weak var elementWeight: UILabel!
@@ -29,6 +30,7 @@ class ElementsDetailedViewController: UIViewController {
     private func updateUI(){
         guard let element = element else {
             fatalError("element is nil")
+            
         }
     
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45350A6E21E3C77E00E7410D /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45350A6D21E3C77E00E7410D /* Favorite.swift */; };
 		45F6109F21DFB70700930BC7 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6109E21DFB70700930BC7 /* NetworkHelper.swift */; };
 		45F610A121DFB74A00930BC7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F610A021DFB74A00930BC7 /* AppError.swift */; };
 		45F610A321DFB7BC00930BC7 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F610A221DFB7BC00930BC7 /* ImageHelper.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45350A6D21E3C77E00E7410D /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		45F6109E21DFB70700930BC7 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		45F610A021DFB74A00930BC7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		45F610A221DFB7BC00930BC7 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				45F610A721DFC49A00930BC7 /* Element.swift */,
+				45350A6D21E3C77E00E7410D /* Favorite.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				45F610B421E011E200930BC7 /* ElementsDetailedViewController.swift in Sources */,
 				45F610A321DFB7BC00930BC7 /* ImageHelper.swift in Sources */,
 				45F610A821DFC49A00930BC7 /* Element.swift in Sources */,
+				45350A6E21E3C77E00E7410D /* Favorite.swift in Sources */,
 				5734756421DA90C700FB6177 /* ElementsViewController.swift in Sources */,
 				45F6109F21DFB70700930BC7 /* NetworkHelper.swift in Sources */,
 				45F610B021DFFBB300930BC7 /* ElementCell.swift in Sources */,

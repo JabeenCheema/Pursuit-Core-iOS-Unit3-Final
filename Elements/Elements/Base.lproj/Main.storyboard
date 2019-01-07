@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZF0-6x-wUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="739"/>
+            <point key="canvasLocation" x="1906" y="797"/>
         </scene>
         <!--Title-->
         <scene sceneID="tev-pc-idM">
@@ -187,7 +187,11 @@
                         <viewLayoutGuide key="safeArea" id="CKE-HQ-2pt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="vpY-cJ-b8s">
-                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="kSk-cv-8QU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="kSk-cv-8QU">
+                            <connections>
+                                <action selector="favorite:" destination="Kqg-VF-EXk" id="Ljt-YA-wYn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="elementBoilingPoint" destination="HUS-QD-YqF" id="lCh-EH-PJl"/>
@@ -197,6 +201,7 @@
                         <outlet property="elementNumber" destination="XCR-ze-PEB" id="Skc-dv-ezR"/>
                         <outlet property="elementSymbol" destination="4I4-0O-RpP" id="0rZ-Vq-XTZ"/>
                         <outlet property="elementWeight" destination="v9q-md-q9G" id="aLj-JB-pww"/>
+                        <outlet property="favButton" destination="kSk-cv-8QU" id="feh-a3-lz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv3-Qb-Xu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,7 +262,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnB-9N-2Xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="739"/>
+            <point key="canvasLocation" x="972" y="797"/>
         </scene>
     </scenes>
 </document>

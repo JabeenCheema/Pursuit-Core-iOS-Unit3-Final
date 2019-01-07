@@ -10,4 +10,8 @@ import Foundation
 
 struct Favorite: Codable {
     
+    let symbol: String
+    let number: Int
+    let discovered_by: String?
+
 }

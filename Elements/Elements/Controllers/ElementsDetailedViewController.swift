@@ -11,6 +11,7 @@ import UIKit
 class ElementsDetailedViewController: UIViewController {
 
     
+    @IBOutlet weak var favButton: UIBarButtonItem!
     @IBOutlet weak var elementImage: UIImageView!
     @IBOutlet weak var elementSymbol: UILabel!
     @IBOutlet weak var elementNumber: UILabel!
@@ -59,5 +60,26 @@ class ElementsDetailedViewController: UIViewController {
     }
 
     
+    @IBAction func favorite(_ sender: UIBarButtonItem) {
+        let favorite = Favorite.init(symbol: element.symbol, number: element.number, discovered_by: element.discovered_by)
 
+        do {
+            let data = try JSONEncoder().encode(favorite)
+            ElementAPIClient.favoriteElement(data: data) { (appError, success) in
+                if let appError = appError {
+                    print("favoriting element error: \(appError)")
+                } else if success {
+                    print("successfully favorited element")
+                } else {
+                    print("was not favorited")
+                }
+            }
+        } catch {
+            print("encoding error: \(error)")
+        }
+        }
+
+
+    
 }
+

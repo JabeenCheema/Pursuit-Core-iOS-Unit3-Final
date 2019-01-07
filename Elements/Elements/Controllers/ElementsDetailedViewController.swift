@@ -24,15 +24,38 @@ class ElementsDetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = element.name
-       
+       updateUI()
     }
     
     private func updateUI(){
-        guard let element = element else {
-            fatalError("element is nil")
-            
+        
+        let urlString = "http://images-of-elements.com/\(element.name.lowercased()).jpg"
+        ImageHelper.shared.fetchImage(urlString: urlString) { (appError, image) in
+            if let image = image {
+                self.elementImage.image = image
+            } else if let appError = appError {
+                print(appError.errorMessage())
+            }
         }
-    
+        elementSymbol?.text = "Symbol: \(element.symbol)"
+        elementNumber?.text = "Number: \(element.numThreeDigits)"
+        elementWeight?.text = "Weight: \(element.atomic_mass)"
+        if let melt = element.melt {
+            elementMeltingPoint?.text = "Melting Point: \(melt)"
+        } else {
+            elementMeltingPoint?.text = "Melting point not Found"
+        }
+        if let boil = element.boil {
+            elementBoilingPoint?.text = "Boiling Point: \(boil)"
+        } else {
+            elementBoilingPoint?.text = "Boiling point not Found"
+
+        }
+        if let discovery = element.discovered_by {
+            elementDiscoveryby?.text = "Discovered by: \(discovery)"
+        } else {
+            elementDiscoveryby?.text = "Not found"
+        }
     }
 
     
